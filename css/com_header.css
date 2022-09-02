@@ -1,0 +1,285 @@
+body {
+    background-color: #f8f8f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    background-color: #f8f8f8;
+}
+
+/* 内容盒子 */
+.nav-center {
+    width: 1190px;
+    height: 40px;
+    /* background-color: skyblue; */
+    margin: 0 auto;
+}
+
+/* nav左侧 */
+.nav-center-left {
+    float: left;
+    width: 400px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    /* background-color: greenyellow; */
+}
+
+/* a链接样式 */
+.nav-center-left a {
+    color: #999;
+    /* 去下划线 */
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.nav-center-left a:hover {
+    color: #fe8c00;
+}
+
+/* 第二个a颜色不同 */
+/* 选择城市 */
+.nav-center-left a:nth-child(3) {
+    color: #000;
+    border: 1px solid #e5e5e5;
+}
+
+/* 立即登陆 */
+.nav-center-left a:nth-child(5) {
+    color: #fe8c00;
+
+}
+
+/* nav右侧样式 */
+.nav-center-right {
+    float: right;
+    width: 520px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    position: relative;
+    /* background-color: greenyellow; */
+}
+
+.nav-center-right a {
+    color: #999;
+    /* 去下划线 */
+    text-decoration: none;
+    padding: 0px 18px;
+}
+
+.nav-center-right a:hover {
+    color: #fe8c00;
+}
+
+#dropdown {
+    list-style: none;
+    float: right;
+}
+
+/*  */
+#dropdown li {
+    float: left;
+    margin-left: 5px;
+}
+
+
+/* 下拉菜单样式 */
+/* 我的美团 */
+#dropdown li:nth-child(1) {
+    width: 86px;
+}
+
+#dropdown li:nth-child(1):hover {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#dropdown li:nth-child(1) dl {
+    /* display: block; */
+    width: 86px;
+    height: 170px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    top: 40px;
+    left: 11px;
+    z-index: 2;
+
+}
+
+/* 商家中心 */
+#dropdown li:nth-child(3) {
+    text-align: center;
+    width: 134px;
+    /* z-index: ; */
+}
+
+#dropdown li:nth-child(3):hover {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#dropdown li:nth-child(3) dl {
+    display: none;
+    text-align: center;
+    width: 134px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    z-index: 2;
+    position: absolute;
+    top: 40px;
+    left: 190px;
+}
+
+/* 美团规则 */
+#dropdown li:nth-child(4) {
+    text-align: center;
+    width: 100px;
+
+}
+
+#dropdown li:nth-child(4):hover {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#dropdown li:nth-child(4) dl {
+    display: none;
+    width: 100px;
+    z-index: 2;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 329px;
+}
+
+/* 网站导航 */
+#dropdown li:nth-child(5) {
+    width: 86px;
+    text-align: center;
+}
+
+#dropdown li:nth-child(5):hover {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#dropdown li:nth-child(5) dl {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 1180px;
+    height: 270px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 2;
+    color: #999;
+}
+
+#dropdown li:nth-child(5) dl dd:nth-child(1) {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 250px;
+    height: 220px;
+    /* border: 1px solid red; */
+    display: block;
+    border: none;
+}
+
+#dropdown li:nth-child(5) dl dd:nth-child(2) {
+    width: 170px;
+    height: 220px;
+    /* border: 1px solid red; */
+    display: block;
+    position: absolute;
+    left: 280px;
+    top: 30px;
+    /* background-color: pink; */
+    border: none;
+}
+
+#dropdown li:nth-child(5) dl dd:nth-child(3) {
+    width: 190px;
+    height: 220px;
+    /* border:1px solid red; */
+    display: block;
+    position: absolute;
+    left: 490px;
+    top: 30px;
+    text-align: center;
+    border: none;
+    /* background-color: red; */
+}
+
+#dropdown li:nth-child(5) dl dd:nth-child(4) {
+    width: 550px;
+    height: 130px;
+    /* border: 1px solid red; */
+    display: block;
+    position: absolute;
+    left: 630px;
+    top: 30px;
+    border: none;
+}
+
+#dropdown li:nth-child(5) dl dd span {
+    width: 80px;
+    height: 35px;
+    float: left;
+}
+
+#dropdown li:nth-child(5) dl dd span img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#dropdown .show dd div {
+    color: #999;
+}
+
+#dropdown .show dd span {
+    color: #999;
+}
+
+#dropdown .show dd div:hover {
+    cursor: pointer;
+    color: #FE8C00;
+}
+
+#dropdown .show dd span:hover {
+    cursor: pointer;
+    color: #FE8C00;
+}
+
+/* 鼠标移入有show的类名，然后就显示 */
+
+/* 下拉隐藏 */
+.displaynone {
+    display: none;
+}
+
+/* 下拉显示 */
+
+#dropdown .show .displaynone {
+    display: block;
+}
